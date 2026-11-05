@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Biblioteca - Conhecimento e Tecnologia</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  </head>
+  <body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-md navbar-dark bg-primary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Biblioteca</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarContent">
+          <ul class="navbar-nav me-auto mb-2 mb-md-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Links</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Menu
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Ação</a></li>
+                <li><a class="dropdown-item" href="#">Outra ação</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Outra opção</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" aria-disabled="true">Desativado</a>
+            </li>
+          </ul>
+          <form class="d-flex gap-2" role="search">
+            <input class="form-control" type="search" placeholder="Pesquisar..." aria-label="Search"/>
+            <button class="btn btn-outline-light" type="submit">Buscar</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Carousel Section -->
+    <div class="container my-4">
+      <div class="d-flex justify-content-between align-items-center mb-3">
+        <h5 class="mb-0">Destaques</h5>
+        <div>
+          <button class="btn btn-outline-primary btn-sm" type="button" data-bs-target="#carouselStacked" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon d-inline-block align-middle" style="filter: invert(1);" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+          </button>
+          <button class="btn btn-outline-primary btn-sm" type="button" data-bs-target="#carouselStacked" data-bs-slide="next">
+            <span class="carousel-control-next-icon d-inline-block align-middle" style="filter: invert(1);" aria-hidden="true"></span>
+            <span class="visually-hidden">Próximo</span>
+          </button>
+        </div>
+      </div>
+
+      <div id="carouselStacked" class="carousel slide rounded-4 overflow-hidden shadow-sm" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="https://picsum.photos/id/24/1200/400" class="d-block w-100 object-fit-cover" style="max-height: 350px;" alt="Banner livros">
+          </div>
+          <div class="carousel-item">
+            <img src="https://picsum.photos/id/367/1200/400" class="d-block w-100 object-fit-cover" style="max-height: 350px;" alt="Banner tecnologia">
+          </div>
+          <div class="carousel-item">
+            <img src="https://picsum.photos/id/445/1200/400" class="d-block w-100 object-fit-cover" style="max-height: 350px;" alt="Banner leitura">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Cards Section -->
+    <div class="container my-4">
+      <div class="row g-4 justify-content-center">
+
+        <!-- Card 1 -->
+        <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center">
+          <section class="card h-100 shadow-sm" style="width: 100%; max-width: 320px;">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWTnxuPKnWJQKewsJQJcE_jySHIeWcC_unmK6613lvcA&s=10" class="card-img-top p-3 bg-light object-fit-contain" style="height: 220px;" alt="Capa do livro Use a Cabeça! Java">
+            <div class="card-body d-flex flex-column">
+              <h4 class="card-title h5">Use a Cabeça! Java</h4>
+              <p class="card-text flex-grow-1 text-muted small">Aprenda Java de forma visual, leve e definitiva. O livro ensina você a pensar como programador, cobrindo orientação a objetos, redes e projetos práticos.</p>
+              <a href="#" class="btn btn-primary mt-auto">Acessar</a>
+            </div>
+          </section>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center">
+          <section class="card h-100 shadow-sm" style="width: 100%; max-width: 320px;">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrvuW3RTFO85R-oB2jB6zVS6tG-mlDQI9jGgYmZ43Wkw&s=10" class="card-img-top p-3 bg-light object-fit-contain" style="height: 220px;" alt="Capa do livro JavaScript O guia definitivo">
+            <div class="card-body d-flex flex-column">
+              <h4 class="card-title h5">JavaScript: O Guia Definitivo</h4>
+              <p class="card-text flex-grow-1 text-muted small">A referência clássica para compreender a fundo uma das linguagens mais importantes do mundo. Combina teoria rigorosa com exemplos práticos de código.</p>
+              <a href="#" class="btn btn-primary mt-auto">Acessar</a>
+            </div>
+          </section>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center">
+          <section class="card h-100 shadow-sm" style="width: 100%; max-width: 320px;">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVupvvp-LQ5daHI74ts5C--Ybn5vghd5DqTKfq0oCrkA&s=10" class="card-img-top p-3 bg-light object-fit-contain" style="height: 220px;" alt="Capa do livro HTML e CSS">
+            <div class="card-body d-flex flex-column">
+              <h4 class="card-title h5">Livro HTML & CSS</h4>
+              <p class="card-text flex-grow-1 text-muted small">Aprenda o melhor da criação de sites com estruturas bem construídas e designs modernos.</p>
+              <a href="#" class="btn btn-primary mt-auto">Acessar</a>
+            </div>
+          </section>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4 mt-5">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <h5 class="fw-bold mb-1">Biblioteca</h5>
+            <p class="text-white-50 small mb-0">Conhecimento e tecnologia em um só lugar.</p>
+          </div>
+          <div class="col-md-6 text-md-end mt-3 mt-md-0">
+            <p class="text-white-50 small mb-0">&copy; 2026 - Todos os direitos reservados.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+</html>
